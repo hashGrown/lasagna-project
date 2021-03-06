@@ -1,13 +1,181 @@
-/* @font-face {
-    font-family: 'NotoSans';
-    src: url('./NotoSans-Regular.ttf') format('ttf'),
-      url('./NotoSans-Bold.ttf') format('ttf');
-    font-weight: 600;
-    font-style: normal;
-  } */
+:root {
+  --main-pink-color: #eb596e;
+}
 
-.hello {
-    color: red;
-    /* background: url('./play.svg'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: #eaeaea;
+  min-height: 100vh;
+
+  position: relative;
+}
+
+/****************** 
+ 일반 태그
+*******************/
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+/****************** 
+ 텍스트
+*******************/
+
+h1 {
+  font-size: 2.25rem;
+}
+
+/****************** 
+ 다시 사용 가능한 클래스
+*******************/
+
+.container {
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  background: none;
+  outline: none;
+  border: none;
+  position: absolute;
+
+  font-size: 3rem;
+  top: 50px;
+  right: 10px;
+  color: #fff;
+}
+
+.close {
+  fill: #fff;
+}
+
+/****************** 
+ hero
+*******************/
+
+.hero {
+  padding-top: 3.5rem;
+}
+
+/****************** 
+ main
+*******************/
+
+.main {
+  padding-top: 3.8rem;
+}
+
+/****************** 
+ timer
+*******************/
+
+/****************** 
+ form-section
+*******************/
+
+.form__item {
+  margin-bottom: 1.5rem;
+}
+
+.form__item .col {
+  width: 100%;
+}
+
+.form__item .col + .col {
+  margin-left: 0.8rem;
+}
+
+.form__label {
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: -0.015rem;
+  margin-bottom: 0.875rem;
+}
+
+.form__input-num {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px #000000 25%;
+  padding: 0.65rem 0;
+  color: #6c6c6c;
+  /* font-size: 0.875rem; */
+}
+
+.form__submit-btn {
+  font-size: 1.125rem;
+  background: var(--main-pink-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 1000px;
+  padding: 0.65rem;
+}
+
+/****************** 
+ Company name
+*******************/
+
+.company-name {
+  margin-top: 5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #6c6c6c;
+  text-align: center;
+}
+
+/****************** 
+ nav
+*******************/
+
+.nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.nav__list {
+  background: #fff;
+}
+
+.nav__item {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.8125rem 0;
+  margin-bottom: 2.0625rem;
+
+  /* 요거 왜 작동하냐? */
+  text-align: center;
+}
+
+.nav__icon--active {
+  color: var(--main-pink-color);
 }
