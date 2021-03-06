@@ -1,6 +1,5 @@
 // import _ from 'lodash';
-// import printMe from './print.js';
-// import './style.css';
+import './style.css';
 // import Play from './play.svg';
 
 // function component() {
